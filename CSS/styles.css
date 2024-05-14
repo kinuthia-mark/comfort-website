@@ -7,12 +7,13 @@ body, h1, h2, ul, p {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ECF0F1;
+    background-color: #000000;
+    color: #fff;
 }
 
 .header {
-    background-color: #2C3E50;
-    color: #ECF0F1;
+    background-color: #000000;
+    color: #ffffff;
     padding: 1em;
     text-align: center;
 }
@@ -27,7 +28,7 @@ body {
 }
 
 .navigation a {
-    color: #ECF0F1;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -45,15 +46,15 @@ blockquote {
 }
 
 .footer {
-    background-color: #2C3E50;
-    color: #ECF0F1;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 1em 0;
 }
 .header {
-    background-color: #2C3E50;
-    color: #ECF0F1;
-    padding: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em 0;
     text-align: center;
 }
 
