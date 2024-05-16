@@ -7,14 +7,17 @@ body, h1, h2, ul, p {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #000000;
-    color: #fff;
+    background-color: #000000; /* Set body background to black */
+    color: #ffffff; /* Set body text color to white */
+}
+
+.header, .footer, .navigation a, .main-content, .intro, .services, .testimonial, blockquote {
+    background-color: #000000; /* Set background color to black for these elements */
+    color: #ffffff; /* Set text color to white for these elements */
 }
 
 .header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1em;
+    padding: 1em 0;
     text-align: center;
 }
 
@@ -46,21 +49,11 @@ blockquote {
 }
 
 .footer {
-    background-color: #000000;
-    color: #ffffff;
     text-align: center;
     padding: 1em 0;
-}
-.header {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 1em 0;
-    text-align: center;
 }
 
 .header-logo {
     max-width: 100px; /* Adjust the maximum width of the logo */
     height: 100px;
-    
 }
-
