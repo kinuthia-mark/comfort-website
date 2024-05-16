@@ -19,6 +19,8 @@ body {
 .header {
     padding: 1em 0;
     text-align: center;
+    font-family: 'Brush Script MT', cursive; /* cursive font for the title*/
+
 }
 
 .navigation ul {
@@ -55,5 +57,5 @@ blockquote {
 
 .header-logo {
     max-width: 200px; /* Adjust the maximum width of the logo */
-    height: 200px;
+    height: 200px; /* Adjust the maximum height of the logo */
 }
