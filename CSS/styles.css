@@ -5,7 +5,7 @@ body, h1, h2, ul, p {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: #000000; /* Set body background to black */
     color: #ffffff; /* Set body text color to white */
