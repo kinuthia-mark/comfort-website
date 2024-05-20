@@ -59,3 +59,9 @@ blockquote {
     max-width: 200px; /* Adjust the maximum width of the logo */
     height: 200px; /* Adjust the maximum height of the logo */
 }
+
+.common-image {
+    width: 400px;
+    height: 400px;
+    border: 2px solid #000;
+}
