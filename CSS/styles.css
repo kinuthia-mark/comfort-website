@@ -234,7 +234,7 @@ details:not([open]) > summary::after {
     background-color: #000;
   }
 
-  .services-table,.services{
+  .services-table,.services,.form,.form-container{
     background-color: #000;
     color: #fff;
   }
