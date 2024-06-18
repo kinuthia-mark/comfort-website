@@ -74,6 +74,37 @@ blockquote {
     color: #fff; /* White text */
 }
 
-.column-container p {
-    margin: 0 0 20px 0;
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+#slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 500%;
+    left: -400;
+    animation: slider 20s infinite;
+}
+
+#slider figure img {
+    width: 16.6667%;
+    float: left;
+}
+
+@keyframes slider {
+    0% { left: 0%; }
+    16.66% { left: 0%; }
+    33.33% { left: -100%; }
+    49.99% { left: -100%; }
+    66.66% { left: -200%; }
+    83.33% { left: -300%; }
+    100% { left: -400%; }
 }
