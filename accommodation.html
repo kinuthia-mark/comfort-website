@@ -28,29 +28,49 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
+    <main>
         <section class="accommodation">
-            <h2>Accommodation</h2>
-            <p>Discover our luxurious rooms designed to provide you with utmost comfort.</p>
-            
-            <div class="room-types">
-                <h3>Room Types</h3>
-                <ul>
-                    <li>Standard Room</li>
-                    <li>Deluxe Room</li>
-                    <li>Executive Suite</li>
-                    <li>Premium Suite</li>
-                </ul>
-            </div>
-
-            <div class="amenities">
-                <h3>Amenities</h3>
-                <ul>
-                    <li>Free Wi-Fi</li>
-                    <li>Room Service</li>
-                    <li>Flat-screen TV</li>
-                    <li>Air Conditioning</li>
-                </ul>
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="services-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Service</th>
+                                <th>Description</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>normal room</td>
+                                <td>basic room amenities</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>deluxe room</td>
+                                <td>better room amenities</td>
+                                <td>$150</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="form">
+                <h2>Request a Service</h2>
+                <div class="form-container">
+                    <form action="submit_form.php" method="POST">
+                        <label for="service">Select a Service:</label>
+                        <select id="service" name="service">
+                            <option value="service1">Service 1</option>
+                            <option value="service2">Service 2</option>
+                            <!-- Add more options as needed -->
+                        </select><br><br>
+                        <label for="details">Service Details:</label><br>
+                        <textarea id="details" name="details" rows="4" cols="50"></textarea><br><br>
+                        <input type="submit" value="Submit">
+                    </form>
                 <img src="images/comfort bed.jpg" class="common-image" alt="accommodation">
                 <img src="images/comfort bathroom.jpg" class="common-image" alt="accommodation">
                 
