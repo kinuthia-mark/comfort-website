@@ -144,8 +144,30 @@ body {
     background-color: #000;
     padding: 10px;
     border-top: 1px solid #000;
+    position: relative;
 }
 
+.menu ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  .menu ul li:hover ul {
+    display: block;
+  }
+  
+  .menu ul li ul li {
+    margin-bottom: 10px;
+  }
+  
+  .menu ul li ul li:last-child {
+    margin-bottom: 0;
+  }
 .menu ul li a {
     color: #fff;
     text-decoration: none;
