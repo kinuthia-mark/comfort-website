@@ -65,3 +65,15 @@ blockquote {
     height: 400px;
     border: 2px solid #000;
 }
+
+.column-container {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 10px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+.column-container p {
+    margin: 0 0 20px 0;
+}
