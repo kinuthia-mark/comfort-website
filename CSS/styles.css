@@ -237,4 +237,20 @@ details:not([open]) > summary::after {
   .services-table,.services,.form,.form-container{
     background-color: #000;
     color: #fff;
+    
   }
+
+  .form{
+    background-color: #000;
+    color: #fff;
+
+  }
+  .column-container{
+    background-color: #000;
+    color: #fff;
+  }
+  #slider{
+    background-color: #000;
+    color: #fff;
+  }
+  
