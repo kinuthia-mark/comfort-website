@@ -157,7 +157,7 @@ body {
 .header {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     background-color: #000;
     color: white;
 }
@@ -169,7 +169,8 @@ body {
 .dropbtn {
     background-color: #000;
     color: white;
-    padding: 10px;
+    padding: 15px;
+    font-size: 18px;
     border: none;
     cursor: pointer;
 }
@@ -206,5 +207,5 @@ body {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
 }
