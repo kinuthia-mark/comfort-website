@@ -312,3 +312,12 @@ a:hover {
     color: #fff;
     border-radius: 5px;
 }
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    margin-left: auto; /* Pushes the right content to the rightmost edge */
+}
