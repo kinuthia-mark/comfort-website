@@ -167,8 +167,9 @@ body {
 }
 
 .dropbtn {
+    font-family: 'Brush Script MT', cursive;
     background-color: #000;
-    color: white;
+    color: red;
     padding: 15px;
     font-size: 18px;
     border: none;
@@ -179,7 +180,7 @@ body {
     display: none;
     position: absolute;
     background-color: #000;
-    color: #fff;
+    color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -187,7 +188,7 @@ body {
 
 .menu a {
     background-color: #000;
-    color: #fff;
+    color: red;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -228,8 +229,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   flex-direction: column;
     height: 100vh;
 }
 
@@ -240,6 +240,8 @@ body {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust shadow color */
     width: 300px;
     text-align: center;
+   margin: auto;
+
 }
 
 h1 {
@@ -285,7 +287,7 @@ p {
 }
 
 a {
-    color: #007BFF;
+    color: red;
     text-decoration: none;
 }
 
