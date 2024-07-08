@@ -209,3 +209,8 @@ body {
 .logo img {
     height: 60px;
 }
+
+.image-gallery{
+    background-color: #000;
+    color: #fff;
+}
