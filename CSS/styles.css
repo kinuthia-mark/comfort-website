@@ -223,8 +223,8 @@ body {
 /* sign up and sign in css*/
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: black; /* Set body background to black */
+    color: white; /* Set text color to white */
     margin: 0;
     padding: 0;
     display: flex;
@@ -234,27 +234,23 @@ body {
 }
 
 .form-container {
-    background-color:#000;
-    color: #fff;
+    background-color: black; /* Set form background to black */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust shadow color */
     width: 300px;
     text-align: center;
 }
 
 h1 {
     margin-bottom: 20px;
-    background-color: #000;
-    color: #fff;
-
+    color: white; /* Set heading text color to white */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
-    color: #fff;
-    background-color: #000;
+    color: white; /* Set label text color to white */
     text-align: left;
 }
 
@@ -262,15 +258,17 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    border: 1px solid #000;
+    border: 1px solid #ddd; /* You can adjust input border color if needed */
     border-radius: 5px;
     box-sizing: border-box;
+    background-color: #333; /* Set input background color */
+    color: white; /* Set input text color to white */
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #000;
+    background-color: #333;
     color: white;
     border: none;
     border-radius: 5px;
@@ -278,24 +276,19 @@ button {
 }
 
 button:hover {
-    background-color: #000;
+    background-color: #555;
 }
 
 p {
     margin-top: 10px;
-    color: #fff;
+    color: white; /* Set paragraph text color to white */
 }
 
 a {
-    color: #fff;
+    color: #007BFF;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-.head,.body{
-    background-color: #000;
-    color: #fff;
 }
