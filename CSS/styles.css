@@ -294,3 +294,21 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.auth-links {
+    display: flex;
+    align-items:flex-end;
+}
+
+.auth-links a {
+    
+    color: red;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.auth-links a:hover {
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+}
