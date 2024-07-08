@@ -80,13 +80,11 @@ body {
 }
 
 #slider {
-    width: 80%;
+    width: 60%; /* Adjust this value to control the width of the slider */
+    margin: 0 auto; /* Center horizontally */
     overflow: hidden;
-}
-
-.slider{
+    padding: 50px 0; /* Optional: Adjust this to control vertical spacing */
     background-color: #000;
-    color: #fff;
 }
 
 #slider figure {
@@ -94,14 +92,16 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 500%; /* 5 images */
+    width: 300%; /* 3 images */
     left: 0;
     animation: slider 20s infinite;
 }
 
 #slider figure img {
-    width: 20%; /* 100% divided by 5 images */
+    width: 33%; 
     flex-shrink: 0;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
 }
 
 @keyframes slider {
@@ -113,7 +113,6 @@ body {
     83.33% { left: -60%; }
     100% { left: -80%; }
 }
-
 
   .services-table,.services,.form,.form-container{
     background-color: #000;
