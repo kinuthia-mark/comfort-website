@@ -80,8 +80,13 @@ body {
 }
 
 #slider {
-    width: 100%;
+    width: 80%;
     overflow: hidden;
+}
+
+.slider{
+    background-color: #000;
+    color: #fff;
 }
 
 #slider figure {
@@ -89,150 +94,26 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    width: 500%;
-    left: -400;
+    width: 500%; /* 5 images */
+    left: 0;
     animation: slider 20s infinite;
 }
 
 #slider figure img {
-    width: 20%;
-    float: left;
+    width: 20%; /* 100% divided by 5 images */
+    flex-shrink: 0;
 }
 
 @keyframes slider {
     0% { left: 0%; }
     16.66% { left: 0%; }
-    33.33% { left: -100%; }
-    49.99% { left: -100%; }
-    66.66% { left: -200%; }
-    83.33% { left: -300%; }
-    100% { left: -400%; }
+    33.33% { left: -20%; }
+    49.99% { left: -20%; }
+    66.66% { left: -40%; }
+    83.33% { left: -60%; }
+    100% { left: -80%; }
 }
 
-.menu body {
-    
-    background-color: #000;
-    color:#fff;
-    margin: 0;
-    padding: 0;
-}
-
-.menu {
-    background-color: #000;
-    padding: 10px;
-}
-
-.menu summary {
-    background-color: #000;
-    color: #fff;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.menu summary:hover {
-    background-color: #000;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li {
-    background-color: #000;
-    padding: 10px;
-    border-top: 1px solid #000;
-    position: relative;
-}
-
-.menu ul li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #000;
-    border: 1px solid #000;
-    padding: 10px;
-  }
-
-  .menu ul li:hover ul {
-    display: block;
-  }
-  
-  .menu ul li ul li {
-    margin-bottom: 10px;
-  }
-  
-  .menu ul li ul li:last-child {
-    margin-bottom: 0;
-  }
-.menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-.menu ul li a:hover {
-    background-color: #000;
-}
-
-details[open] > summary::after {
-    content: "▼";
-    float: right;
-}
-
-details:not([open]) > summary::after {
-    content: "►";
-    float: right;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    background-color: #000;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #000;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-    background-color: #000;
-  }
 
   .services-table,.services,.form,.form-container{
     background-color: #000;
@@ -254,3 +135,61 @@ details:not([open]) > summary::after {
     color: #fff;
   }
   
+  /* table css*/
+  table {
+    width: 100%;
+    border-collapse: separate; /* Ensure cells are separate, not collapsed */
+    border-spacing: 10px; /* Adjust this value to increase or decrease space */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000; /* Keep the border for cells */
+}
+
+.dropdown button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.dropdown a{
+    display: block;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+
+}
+
+.dropdown .menu{
+    display: none;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #000;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.dropdown:hover .menu{
+    display: block;
+}
+
+.dropdown:hover .menu{
+background-color: #000;
+
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.menu-clicked{
+    
+}
