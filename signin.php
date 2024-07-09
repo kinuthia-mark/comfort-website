@@ -16,13 +16,13 @@
         <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="accommodation.html">Accommodation</a>
-                <a href="food.html">Food</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About Us</a>
+                <a href="index.php">Home</a>
+                <a href="accommodation.php">Accommodation</a>
+                <a href="food.php">Food</a>
+                <a href="gallery.php">Gallery</a>
+                <a href="reviews.php">Reviews</a>
+                <a href="contact.php">Contact</a>
+                <a href="about.php">About Us</a>
             </div>
         </div>
         <div class="logo">
@@ -32,25 +32,26 @@
 
         <div class="header-right">
         <div class="auth-links">
-            <a href="signup.html">Sign Up</a> <!-- Link to Sign Up page -->
-            <a href="signin.html">Sign In</a> <!-- Link to Sign In page -->
+            <a href="signup.php">Sign Up</a> <!-- Link to Sign Up page -->
+            <a href="signin.php">Sign In</a> <!-- Link to Sign In page -->
         </div>
         </div>
     </header>
+    
 
     
     <div class="form-container">
         <h1>Sign In</h1>
-        <form action="signup_process.php" method="POST">
+        <form action="" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Sign In</button>
+            <button type="submit" name="signin">Sign In</button>
         </form>
-        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        <p>Don't have an account? <a href="signup.php">Sign Up</a></p>
     </div>
 
 
@@ -60,3 +61,36 @@
     </footer>
 </body>
 </html>
+
+<?php
+// Include the database connection file
+require("dbconnection.php");
+
+// Process form data when form is submitted
+    if(isset($_POST["signin"])){
+        $id = $_POST['id'];
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+       
+
+
+
+    // Prepare INSERT statement
+    
+    $sql = "INSERT INTO `signin`(`id`, `username`, `password`) VALUES ('$id','$username','$password')";
+    $result=$conn->query($sql);
+
+    if($result){
+        
+        header("location: index.php");
+        
+    }
+    else{
+        echo"error" . $sql . "<br>" . $conn->error;
+    
+    }
+    
+    }
+    
+
+?>

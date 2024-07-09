@@ -16,13 +16,13 @@
         <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="accommodation.html">Accommodation</a>
-                <a href="food.html">Food</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="contact.html">Contact</a>
-                <a href="about.html">About Us</a>
+                <a href="index.php">Home</a>
+                <a href="accommodation.php">Accommodation</a>
+                <a href="food.php">Food</a>
+                <a href="gallery.php">Gallery</a>
+                <a href="reviews.php">Reviews</a>
+                <a href="contact.php">Contact</a>
+                <a href="about.php">About Us</a>
             </div>
         </div>
         <div class="logo">
@@ -32,8 +32,8 @@
 
         <div class="header-right">
         <div class="auth-links">
-            <a href="signup.html">Sign Up</a> <!-- Link to Sign Up page -->
-            <a href="signin.html">Sign In</a> <!-- Link to Sign In page -->
+            <a href="signup.php">Sign Up</a> <!-- Link to Sign Up page -->
+            <a href="signin.php">Sign In</a> <!-- Link to Sign In page -->
         </div>
         </div>
     </header>
@@ -41,7 +41,7 @@
     
     <div class="form-container">
         <h1>Sign Up</h1>
-        <form action="signup_process.php" method="POST">
+        <form action="" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
 
@@ -53,7 +53,7 @@
 
             <button type="submit">Sign Up</button>
         </form>
-        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        <p>Already have an account? <a href="signin.php">Sign In</a></p>
     </div>
     <!-- Footer -->
     <footer class="footer">
@@ -61,3 +61,37 @@
     </footer>
 </body>
 </html>
+
+<?php
+// Include the database connection file
+require("dbconnection.php");
+
+// Process form data when form is submitted
+    if(isset($_POST["signup"])){
+        $id = $_POST['id'];
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $password = $_POST['password'];
+        $registration_date = $_POST['registration_date'];
+
+
+
+    // Prepare INSERT statement
+    
+    $sql = "INSERT INTO `signup`(`id`, `username`, `email`, `password`, `registration_date`) VALUES ('$id','$username','$email','$password','$registration_date')";
+    $result=$conn->query($sql);
+
+    if($result){
+        
+        header("location: index.php");
+        
+    }
+    else{
+        echo"error" . $sql . "<br>" . $conn->error;
+    
+    }
+    
+    }
+    
+
+?>

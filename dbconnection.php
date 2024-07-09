@@ -1,21 +1,22 @@
 <?php
 
 // Database credentials
-$dbHost = 'localhost'; 
-$dbUsername = 'root'; 
-$dbPassword = ''; 
-$dbName = 'my_website_db'; 
+$servername = 'localhost'; 
+$username = 'root'; 
+$password = ''; 
+$db_name = 'my_website_db'; 
 
 // Create connection
-$connection = mysqli_connect("localhost:3306", "root", "", "my_website_db");
+$conn = new mysqli($servername,$username, $password, $db_name );
 
-// Check connection
-if (!$connection) {
-    die("Connection failed: " . mysqli_connect_error());
-} else {
-    echo 'Connected successfully';
+//check connection
+
+if ($conn->connect_error) {
+    die("connection failed: ". $conn->connect_error);
+    
+
 }
 
-// Close the connection (optional)
-mysqli_close($connection);
+echo "connected successfully";
+
 ?>
