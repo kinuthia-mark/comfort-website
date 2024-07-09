@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="CSS\styles.css"/>
     <link rel="stylesheet" href="CSS\registration.css"/>
-    <script src="validate.js" defer></script> <!-- Load JavaScript for validation -->
+    <script src="javascript\validate.js" defer></script> <!-- Load JavaScript for validation -->
 </head>
 <body>
     <!-- Header -->
@@ -39,21 +39,20 @@
 
     
     <div class="form-container">
-        <h1>Sign Up</h1>
-        <form action="/signup" method="post">
+        <h1>Sign In</h1>
+        <form action="/signin" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit">Sign In</button>
         </form>
-        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
     </div>
+
+
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Comfort Executive Suites. All rights reserved.</p>
