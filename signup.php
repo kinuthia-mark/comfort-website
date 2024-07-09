@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CSS\styles.css"/>
     <link rel="stylesheet" href="CSS\registration.css"/>
     <script src="javascript\validate.js" defer></script> <!-- Load JavaScript for validation -->
+    
 </head>
 <body>
     <!-- Header -->
@@ -40,7 +41,7 @@
     
     <div class="form-container">
         <h1>Sign Up</h1>
-        <form action="/signup" method="post">
+        <form action="signup_process.php" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
 

@@ -6,6 +6,7 @@
     <title>About Us | Comfort Executive Suites</title>
     <link rel="stylesheet" href="CSS\styles.css"/>
     
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
