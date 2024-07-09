@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
@@ -79,41 +79,6 @@ body {
     color: #fff; /* White text */
 }
 
-#slider {
-    width: 60%; /* Adjust this value to control the width of the slider */
-    margin: 0 auto; /* Center horizontally */
-    overflow: hidden;
-    padding: 50px 0; /* Optional: Adjust this to control vertical spacing */
-    background-color: #000;
-}
-
-#slider figure {
-    position: relative;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    width: 300%; /* 3 images */
-    left: 0;
-    animation: slider 20s infinite;
-}
-
-#slider figure img {
-    width: 33%; 
-    flex-shrink: 0;
-    margin: 0; /* Remove any margin */
-    padding: 0; /* Remove any padding */
-}
-
-@keyframes slider {
-    0% { left: 0%; }
-    16.66% { left: 0%; }
-    33.33% { left: -20%; }
-    49.99% { left: -20%; }
-    66.66% { left: -40%; }
-    83.33% { left: -60%; }
-    100% { left: -80%; }
-}
-
   .services-table,.services,.form,.form-container{
     background-color: #000;
     color: #fff;
@@ -126,10 +91,6 @@ body {
 
   }
   .column-container{
-    background-color: #000;
-    color: #fff;
-  }
-  #slider{
     background-color: #000;
     color: #fff;
   }
@@ -221,79 +182,6 @@ body {
     color: #fff;
 }
 
-/* sign up and sign in css*/
-body {
-    font-family: Arial, sans-serif;
-    background-color: black; /* Set body background to black */
-    color: white; /* Set text color to white */
-    margin: 0;
-    padding: 0;
-    display: flex;
-   flex-direction: column;
-    height: 100vh;
-}
-
-.form-container {
-    background-color: black; /* Set form background to black */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust shadow color */
-    width: 300px;
-    text-align: center;
-   margin: auto;
-
-}
-
-h1 {
-    margin-bottom: 20px;
-    color: white; /* Set heading text color to white */
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: white; /* Set label text color to white */
-    text-align: left;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd; /* You can adjust input border color if needed */
-    border-radius: 5px;
-    box-sizing: border-box;
-    background-color: #333; /* Set input background color */
-    color: white; /* Set input text color to white */
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-p {
-    margin-top: 10px;
-    color: white; /* Set paragraph text color to white */
-}
-
-a {
-    color: red;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 .auth-links {
     display: flex;
