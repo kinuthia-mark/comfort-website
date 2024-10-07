@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="CSS\styles.css"/>
     <link rel="stylesheet" href="CSS\registration.css"/>
     <script src="javascript\validate.js" defer></script> <!-- Load JavaScript for validation -->
@@ -16,13 +16,13 @@
         <div class="dropdown">
             <button class="dropbtn">Menu</button>
             <div class="menu">
-                <a href="index.php">Home</a>
-                <a href="accommodation.php">Accommodation</a>
-                <a href="food.php">Food</a>
-                <a href="gallery.php">Gallery</a>
-                <a href="reviews.php">Reviews</a>
-                <a href="contact.php">Contact</a>
-                <a href="about.php">About Us</a>
+                <a href="index.html">Home</a>
+                <a href="accommodation.html">Accommodation</a>
+                <a href="food.html">Food</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="contact.html">Contact</a>
+                <a href="about.html">About Us</a>
             </div>
         </div>
         <div class="logo">
@@ -37,24 +37,24 @@
         </div>
         </div>
     </header>
-    
 
     
     <div class="form-container">
-        <h1>Sign In</h1>
+        <h1>Sign Up</h1>
         <form action="" method="POST">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
 
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
             <label for="password">Password</label>
             <input type="password" id="password" name="password" required>
 
-            <button type="submit" name="signin">Sign In</button>
+            <button type="submit">Sign Up</button>
         </form>
-        <p>Don't have an account? <a href="signup.php">Sign Up</a></p>
+        <p>Already have an account? <a href="signin.php">Sign In</a></p>
     </div>
-
-
     <!-- Footer -->
     <footer class="footer">
         <p>&copy; 2024 Comfort Executive Suites. All rights reserved.</p>
@@ -67,17 +67,18 @@
 require("dbconnection.php");
 
 // Process form data when form is submitted
-    if(isset($_POST["signin"])){
+    if(isset($_POST["signup"])){
         $id = $_POST['id'];
         $username = $_POST['username'];
+        $email = $_POST['email'];
         $password = $_POST['password'];
-       
+        $registration_date = $_POST['registration_date'];
 
 
 
     // Prepare INSERT statement
     
-    $sql = "INSERT INTO `signin`(`id`, `username`, `password`) VALUES ('$id','$username','$password')";
+    $sql = "INSERT INTO `signup`(`id`, `username`, `email`, `password`, `registration_date`) VALUES ('$id','$username','$email','$password','$registration_date')";
     $result=$conn->query($sql);
 
     if($result){
