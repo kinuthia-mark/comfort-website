@@ -4,6 +4,10 @@ body, h1, h2, ul, p {
     padding: 0;
 }
 
+h2{
+    color: #ff4b2b;
+}
+
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;

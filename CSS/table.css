@@ -1,0 +1,67 @@
+/* General body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+/* Table styling */
+.services-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.services-table th, .services-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #e0451a; /* Only bottom border for row separation */
+}
+
+.services-table th {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #e0451a; /* Red border below header */
+}
+
+.services-table td {
+    background-color: #000;
+    color: #fff;
+}
+
+
+}
+
+/* Header and footer styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Black header background */
+    padding: 10px 20px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    background-color: #000;
+    color: white;
+    padding: 20px;
+}
+
+.black {
+    color: #ff4b2b;
+}
+
+.room-types h3{
+    color:#ff4b2b
+}
