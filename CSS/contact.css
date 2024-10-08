@@ -1,0 +1,32 @@
+
+.map {
+    margin: 20px 0;
+}
+
+.contact-social-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-social-info ul li {
+    margin: 5px 0;
+}
+
+.contact-social-info a {
+    text-decoration: none;
+    color: #fff; /* Example color */
+}
+
+.contact-social-info a i {
+    margin-right: 8px; /* Space between icon and text */
+    color: #ff4b2b; /* Example color for the icons */
+}
+
+.contact-social-info a:hover {
+    text-decoration: underline;
+    color:#ff4b2b;
+}
+
+.contact-social-info h4{
+    color:#ff4b2b;
+}

@@ -1,13 +1,10 @@
-
+/* Reset margins and paddings */
 body, h1, h2, ul, p {
     margin: 0;
     padding: 0;
 }
 
-h2{
-    color: #ff4b2b;
-}
-
+/* Header and general body styles */
 body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
@@ -15,120 +12,24 @@ body {
     color: #ffffff; /* Set body text color to white */
 }
 
-.header, .footer, .navigation a, .main-content, .intro, .services, .testimonial, blockquote {
-    background-color: #000000; /* Set background color to black for these elements */
-    color: #ffffff; /* Set text color to white for these elements */
-}
-
-.header {
-    padding: 1em 0;
-    text-align: center;
-    font-family: 'Brush Script MT', cursive; /* cursive font for the title*/
-
-}
-
-.navigation ul {
-    list-style-type: none;
-}
-
-.navigation ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.navigation a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.main-content {
-    padding: 20px;
-}
-
-.intro, .services, .testimonial {
-    margin-bottom: 30px;
-}
-
-blockquote {
-    font-style: italic;
-    margin-top: 20px;
-}
-
-.footer {
-    text-align: center;
-    padding: 1em 0;
-}
-
-.header-logo {
-    max-width: 200px; /* Adjust the maximum width of the logo */
-    height: 200px; /* Adjust the maximum height of the logo */
-}
-
-.common-image {
-    width: 400px;
-    height: 400px;
-    border: 2px solid #000;
-}
-
-.column-container {
-    column-count: 3;
-    column-gap: 20px;
-    padding: 10px;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-}
-
-body {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-}
-
-  .services-table,.services,.form,.form-container{
-    background-color: #000;
-    color: #fff;
-    
-  }
-
-  .form{
-    background-color: #000;
-    color: #fff;
-
-  }
-  .column-container{
-    background-color: #000;
-    color: #fff;
-  }
-  
-  /* table css*/
-  table {
-    width: 100%;
-    border-collapse: separate; /* Ensure cells are separate, not collapsed */
-    border-spacing: 10px; /* Adjust this value to increase or decrease space */
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #000; /* Keep the border for cells */
-}
-
-/* dropdown menu and logo css*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
+/* Header styling */
 .header {
     display: flex;
-    align-items: center;
+    justify-content: space-between; /* Distributes space evenly between items */
+    align-items: center;            /* Align items vertically in the center */
     padding: 20px;
     background-color: #000;
     color: white;
 }
 
+/* Logo styling */
+.logo img {
+    height: 60px; /* Adjust logo height */
+}
+
+/* Dropdown menu */
 .dropdown {
-    position: relative;
+    position: relative; /* Allows positioning of the dropdown relative to the header */
 }
 
 .dropbtn {
@@ -168,32 +69,13 @@ body {
     display: block;
 }
 
-.logo {
-    margin-left: 20px;
-}
-
-.logo img {
-    height: 60px;
-}
-
-.image-gallery{
-    background-color: #000;
-    color: #fff;
-}
-
-.black{
-    background-color: #000;
-    color: #fff;
-}
-
-
+/* Auth links */
 .auth-links {
     display: flex;
-    align-items:flex-end;
+    align-items: center; /* Center aligns the auth links vertically */
 }
 
 .auth-links a {
-    
     color: red;
     text-decoration: none;
     padding: 10px;
@@ -205,11 +87,94 @@ body {
     border-radius: 5px;
 }
 
-.header-left {
-    display: flex;
-    align-items: center;
+/* Navigation styles */
+.navigation ul {
+    list-style-type: none;
 }
 
-.header-right {
-    margin-left: auto; /* Pushes the right content to the rightmost edge */
+.navigation ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main content and typography */
+.main-content {
+    padding: 20px;
+}
+
+h2 {
+    color: #ff4b2b;
+}
+
+.intro, .services, .testimonial {
+    margin-bottom: 30px;
+}
+
+/* Blockquote styling */
+blockquote {
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Image gallery */
+.image-gallery {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Column container for gallery or services */
+.column-container {
+    column-count: 3;
+    column-gap: 20px;
+    padding: 10px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+/* Forms and form containers */
+.form, .form-container, .services-table, .services {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: separate; /* Ensure cells are separate */
+    border-spacing: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000;
+}
+
+/* Style for block elements like services */
+.services-table, .services, .form, .form-container, .image-gallery {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Adjust column container appearance */
+.column-container {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Black background for block elements */
+.black {
+    background-color: #000;
+    color: #fff;
 }
