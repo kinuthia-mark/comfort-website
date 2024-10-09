@@ -1,0 +1,53 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust font sizes for better readability */
+    .image-text-overlay {
+        font-size: 1.5em; /* Adjust font size for the overlay */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .image-text-overlay h2 {
+        font-size: 2.5em; /* Adjusted size for mobile */
+    }
+
+    .image-text-overlay p {
+        font-size: 1.2em; /* Adjusted size for mobile */
+    }
+
+    /* Ensure images in the gallery are responsive */
+    .common-image {
+        width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Modify section paddings for smaller screens */
+    section {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+
+    /* Welcome section heading and text */
+    .welcome-section h2 {
+        font-size: 2em; /* Adjusted heading size for mobile */
+    }
+
+    .welcome-section p {
+        font-size: 1em; /* Adjusted paragraph size for mobile */
+    }
+
+    /* Services and reviews section */
+    .services-section h2, 
+    .reviews-section h2, 
+    .gallery-section h2 {
+        font-size: 1.8em; /* Adjusted heading size for mobile */
+    }
+
+    .services-section p, 
+    .reviews-section blockquote {
+        font-size: 1em; /* Adjusted paragraph size for mobile */
+    }
+
+    /* Footer text adjustment */
+    .footer {
+        font-size: 0.9em; /* Smaller font size for mobile */
+    }
+}

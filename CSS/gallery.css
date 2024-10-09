@@ -1,9 +1,10 @@
+/* Gallery item image styling */
 .gallery-item img {
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smoothly transition transform and opacity over 0.3 seconds */
 }
 
+/* Hover effect for gallery item images */
 .gallery-item:hover img {
-    transform: scale(1.05);
-    opacity: 0.8;
+    transform: scale(1.05); /* Scales the image to 105% of its original size on hover */
+    opacity: 0.8; /* Reduces the opacity to 80% on hover, giving a slightly faded effect */
 }
-

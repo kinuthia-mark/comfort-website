@@ -1,175 +1,180 @@
 /* General body styling with new fonts */
 body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif; /* Sets the main font for the entire body text */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    line-height: 1.6; /* Adjusts line spacing for readability */
 }
 
 /* Header styling */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #000; /* Black header background */
-    padding: 10px 20px;
+    display: flex; /* Uses flexbox layout for easier alignment of elements */
+    justify-content: space-between; /* Spaces out items (logo and navigation) evenly */
+    align-items: center; /* Aligns header elements vertically in the center */
+    background-color: #000; /* Sets the header background color to black */
+    padding: 10px 20px; /* Adds padding inside the header */
 }
 
 .header a {
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 15px;
-    font-weight: bold;
-    font-family: 'Lora', serif; /* Heading font for header links */
-    transition: background-color 0.3s ease;
+    text-decoration: none; /* Removes the default underline from links */
+    color: #fff; /* Sets the link text color to white */
+    padding: 10px 15px; /* Adds padding around the links */
+    font-weight: bold; /* Makes the text bold */
+    font-family: 'Lora', serif; /* Sets a different font for the header links */
+    transition: background-color 0.3s ease; /* Adds a smooth background color transition on hover */
 }
 
 .header a:hover {
-    background-color: #ff4b2b; /* Subtle hover effect for interaction */
-    color: white;
+    background-color: #ff4b2b; /* Changes the background color on hover to a reddish-orange */
+    color: white; /* Ensures the text remains white on hover */
 }
 
-/* Dropdown styling to match header links */
+/* Dropdown button styling */
 .dropbtn {
-    background-color: #000; /* Black dropdown background to match header */
-    color: #fff;
-    padding: 10px 15px;
-    font-family: 'Lora', serif;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #000; /* Black dropdown button background to match the header */
+    color: #fff; /* White text color */
+    padding: 10px 15px; /* Adds padding inside the button */
+    font-family: 'Lora', serif; /* Uses the 'Lora' font for the button */
+    font-weight: bold; /* Makes the text bold */
+    border: none; /* Removes the border */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+    transition: background-color 0.3s ease; /* Adds a smooth hover effect */
 }
 
 .dropbtn:hover {
-    background-color: #ff4b2b; /* Subtle hover effect for dropdown */
+    background-color: #ff4b2b; /* Changes the button background color to reddish-orange on hover */
 }
 
+/* Dropdown menu styling */
 .menu a {
-    background-color: #000; /* Dropdown background stays black */
-    color: #fff;
-    padding: 10px;
-    display: block;
+    background-color: #000; /* Sets the dropdown menu background to black */
+    color: #fff; /* White text for dropdown items */
+    padding: 10px; /* Adds padding inside each dropdown item */
+    display: block; /* Ensures each link takes up the full width of the dropdown */
 }
 
 .menu a:hover {
-    background-color: #ff4b2b;
-    color: white;
+    background-color: #ff4b2b; /* Changes the background of the dropdown item on hover */
+    color: white; /* Keeps the text white on hover */
 }
 
 /* Image section with text overlay */
 .image-section {
-    position: relative;
-    text-align: center;
-    color: white;
+    position: relative; /* Allows the text overlay to be positioned relative to the image */
+    text-align: center; /* Centers the text horizontally */
+    color: white; /* White text color for the overlay */
+    width: 100%; /* Ensure the section takes full width */
 }
 
 .image-section img {
-     
-    width: 100%; /* Adjust as needed */   
-    height:auto;  
-    
+    width: 100%; /* Makes the image take up the full width of its container */
+    height: auto; /* Ensures the image height scales proportionally */
 }
 
 .image-text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    font-family: 'Lora', serif;
-    background: rgba(0, 0, 0, 0.5); /* Add some transparency to the background */
-    padding: 20px;
-    border-radius: 8px;
+    position: absolute; /* Positions the overlay absolutely inside the image container */
+    top: 50%; /* Centers the overlay vertically */
+    left: 50%; /* Centers the overlay horizontally */
+    transform: translate(-50%, -50%); /* Fine-tunes centering of the text */
+    color: white; /* White text color */
+    text-align: center; /* Centers the text */
+    font-family: 'Lora', serif; /* Uses the 'Lora' font for the overlay text */
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background to the overlay */
+    padding: 20px; /* Adds padding around the text */
+    border-radius: 8px; /* Slightly rounds the corners of the overlay */
 }
 
 .image-text-overlay h2 {
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #ff4b2b;
+    font-size: 3em; /* Large font size for the heading */
+    margin-bottom: 10px; /* Adds space below the heading */
+    color: #ff4b2b; /* Reddish-orange color for the heading text */
 }
 
 .image-text-overlay p {
-    font-size: 1.5em;
-    color: white;
+    font-size: 1.5em; /* Sets a moderate font size for the paragraph text */
+    color: white; /* Ensures the paragraph text is white */
 }
 
 /* Footer centering */
 .footer {
-    text-align: center;
-    background-color: #000; /* Footer now matches header for consistency */
-    color: #fff;
-    padding: 20px;
-    font-family: 'Open Sans', sans-serif;
+    text-align: center; /* Centers the text in the footer */
+    background-color: #000; /* Black footer background to match the header */
+    color: #fff; /* White text color for the footer */
+    padding: 20px; /* Adds padding around the footer content */
+    font-family: 'Open Sans', sans-serif; /* Uses the 'Open Sans' font for the footer */
 }
 
 /* Welcome section heading and text */
 .welcome-section h2 {
-    font-family: 'Lora', serif;
-    font-size: 2.5em;
-    color: #ff4b2b; /* Stylish color matching brand */
-    text-align: center;
-    margin: 20px 0;
+    font-family: 'Lora', serif; /* Uses the 'Lora' font for the heading */
+    font-size: 2.5em; /* Large font size for the heading */
+    color: #ff4b2b; /* Reddish-orange color for the heading */
+    text-align: center; /* Centers the heading */
+    margin: 20px 0; /* Adds margin above and below the heading */
 }
 
 .welcome-section p {
-    text-align: center;
-    font-size: 1.2em;
-    padding: 0 20px;
+    text-align: center; /* Centers the paragraph text */
+    font-size: 1.2em; /* Sets a moderate font size for the paragraph text */
+    padding: 0 20px; /* Adds padding on the sides of the paragraph */
 }
 
 /* General section styling */
 section {
-    padding: 40px 20px;
+    padding: 40px 20px; /* Adds padding inside all sections for spacing */
 }
 
+/* Section heading styling for services, reviews, and gallery sections */
 .services-section h2, .reviews-section h2, .gallery-section h2 {
-    font-family: 'Lora', serif;
-    font-size: 2.2em;
-    text-align: center;
-    color: #ff4b2b;
+    font-family: 'Lora', serif; /* Uses the 'Lora' font for these headings */
+    font-size: 2.2em; /* Sets a large font size for the headings */
+    text-align: center; /* Centers the headings */
+    color: #ff4b2b; /* Reddish-orange color for the headings */
 }
 
+/* Services and reviews content styling */
 .services-section p, .reviews-section blockquote {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    background-color: #333; /* Dark gray blockquote background */
-    padding: 20px;
-    border-left: 5px solid #ff0000; /* Red border */
-    margin: 20px auto;
-    max-width: 600px;
-
-    
+    font-family: 'Open Sans', sans-serif; /* Uses 'Open Sans' for the text */
+    font-size: 1.2em; /* Sets a moderate font size for the text */
+    text-align: center; /* Centers the text */
+    background-color: #333; /* Dark gray background for reviews and services */
+    padding: 20px; /* Adds padding around the text */
+    border-left: 5px solid #ff0000; /* Adds a red left border for emphasis */
+    margin: 20px auto; /* Adds vertical spacing and centers the block */
+    max-width: 600px; /* Limits the width of the block */
 }
 
-/* Gallery images */
+/* Gallery images styling */
 .image-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Allow images to wrap to the next line */
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
+    display: flex; /* Uses flexbox to display the images */
+    flex-wrap: wrap; /* Allows the images to wrap to the next line */
+    justify-content: center; /* Centers the images horizontally */
+    gap: 20px; /* Adds spacing between the images */
+    margin-top: 20px; /* Adds space above the gallery */
 }
 
 .common-image {
-    width: 400px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+    width: 400px; /* Sets a fixed width for the images */
+    height: 300px; /* Sets a fixed height for the images */
+    object-fit: cover; /* Ensures the images cover the space without distortion */
+    border-radius: 10px; /* Rounds the corners of the images */
+    box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5); /* Adds a red shadow to the images */
 }
 
-.main-content h3{
-    color: #ff4b2b;
+/* Heading styling in the main content */
+.main-content h3 {
+    color: #ff4b2b; /* Sets the heading text color to reddish-orange */
 }
 
-/* Target by ID */
+/* Styling for an element targeted by its ID */
 #booking-link {
-    color: #fff;
+    color: #fff; /* White text color */
 }
 
 #booking-link:hover {
+    color: #ff4b2b; /* Changes the link color to reddish-orange on hover */
+}
+
+.main-content h2{
     color: #ff4b2b;
 }

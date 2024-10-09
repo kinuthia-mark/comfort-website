@@ -1,180 +1,109 @@
-/* Reset margins and paddings */
+/* Reset margins and paddings for common elements */
 body, h1, h2, ul, p {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
 }
 
 /* Header and general body styles */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    background-color: #000000; /* Set body background to black */
-    color: #ffffff; /* Set body text color to white */
+    font-family: 'Open Sans', sans-serif; /* Sets the main font for the body */
+    line-height: 1.6; /* Adjusts line spacing for readability */
+    background-color: #000000; /* Sets body background to black */
+    color: #ffffff; /* Sets body text color to white */
 }
 
 /* Header styling */
 .header {
-    display: flex;
+    display: flex; /* Uses flexbox for layout */
     justify-content: space-between; /* Distributes space evenly between items */
-    align-items: center;            /* Align items vertically in the center */
-    padding: 20px;
-    background-color: #000;
-    color: white;
+    align-items: center; /* Aligns items vertically in the center */
+    padding: 20px; /* Adds padding inside the header */
+    background-color: #000; /* Black background for header */
+    color: white; /* Text color for header */
 }
 
 /* Logo styling */
 .logo img {
-    height: 60px; /* Adjust logo height */
+    height: 60px; /* Adjusts the logo height */
 }
 
-/* Dropdown menu */
+/* Dropdown menu styling */
 .dropdown {
-    position: relative; /* Allows positioning of the dropdown relative to the header */
+    position: relative; /* Positions dropdown relative to the header */
 }
 
 .dropbtn {
-    font-family: 'Brush Script MT', cursive;
-    background-color: #000;
-    color: red;
-    padding: 15px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
+    font-family: 'Brush Script MT', cursive; /* Sets font for dropdown button */
+    background-color: #000; /* Black background for dropdown button */
+    color: red; /* Red text color for dropdown button */
+    padding: 15px; /* Adds padding inside dropdown button */
+    font-size: 18px; /* Sets font size for dropdown button */
+    border: none; /* Removes border from dropdown button */
+    cursor: pointer; /* Changes cursor to pointer on hover */
 }
 
 .menu {
-    display: none;
-    position: absolute;
-    background-color: #000;
-    color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    display: none; /* Hides the dropdown menu by default */
+    position: absolute; /* Positions the dropdown menu absolutely */
+    background-color: #000; /* Black background for dropdown menu */
+    color: white; /* White text color for dropdown menu */
+    min-width: 160px; /* Sets minimum width for dropdown menu */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Adds shadow for dropdown menu */
+    z-index: 1; /* Ensures dropdown is above other content */
 }
 
 .menu a {
-    background-color: #000;
-    color: red;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+    background-color: #000; /* Black background for menu links */
+    color: red; /* Red text color for menu links */
+    padding: 12px 16px; /* Adds padding inside menu links */
+    text-decoration: none; /* Removes underline from menu links */
+    display: block; /* Makes links block elements */
 }
 
 .menu a:hover {
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Keeps background black on hover */
+    color: #fff; /* Changes text color to white on hover */
 }
 
 .dropdown:hover .menu {
-    display: block;
+    display: block; /* Shows the dropdown menu on hover */
 }
 
-/* Auth links */
+/* Auth links styling */
 .auth-links {
-    display: flex;
-    align-items: center; /* Center aligns the auth links vertically */
+    display: flex; /* Uses flexbox for alignment */
+    align-items: center; /* Center aligns auth links vertically */
 }
 
 .auth-links a {
-    color: red;
-    text-decoration: none;
-    padding: 10px;
+    color: red; /* Red text color for auth links */
+    text-decoration: none; /* Removes underline from auth links */
+    padding: 10px; /* Adds padding around auth links */
 }
 
 .auth-links a:hover {
-    background-color: #000;
-    color: #fff;
-    border-radius: 5px;
+    background-color: #000; /* Sets background to black on hover */
+    color: #fff; /* Changes text color to white on hover */
+    border-radius: 5px; /* Rounds the corners of auth links on hover */
 }
 
 /* Navigation styles */
 .navigation ul {
-    list-style-type: none;
+    list-style-type: none; /* Removes bullet points from list */
 }
 
 .navigation ul li {
-    display: inline;
-    margin-right: 20px;
+    display: inline; /* Displays list items in a single line */
+    margin-right: 20px; /* Adds right margin between list items */
 }
 
 .navigation a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-/* Main content and typography */
-.main-content {
-    padding: 20px;
-}
-
-h2 {
-    color: #ff4b2b;
-}
-
-.intro, .services, .testimonial {
-    margin-bottom: 30px;
-}
-
-/* Blockquote styling */
-blockquote {
-    font-style: italic;
-    margin-top: 20px;
-}
-
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 1em 0;
-}
-
-/* Image gallery */
-.image-gallery {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Column container for gallery or services */
-.column-container {
-    column-count: 3;
-    column-gap: 20px;
-    padding: 10px;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
-}
-
-/* Forms and form containers */
-.form, .form-container, .services-table, .services {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Table styling */
-table {
-    width: 100%;
-    border-collapse: separate; /* Ensure cells are separate */
-    border-spacing: 10px;
-}
-
-th, td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #000;
-}
-
-/* Style for block elements like services */
-.services-table, .services, .form, .form-container, .image-gallery {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Adjust column container appearance */
-.column-container {
-    background-color: #000;
-    color: #fff;
+    color: #ffffff; /* White text color for navigation links */
+    text-decoration: none; /* Removes underline from navigation links */
 }
 
 /* Black background for block elements */
 .black {
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Sets background color to black */
+    color: #fff; /* Sets text color to white */
 }
