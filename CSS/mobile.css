@@ -1,7 +1,7 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .image-text-overlay {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 5px; /* Reduce padding for smaller screens */
     }
 
     .image-text-overlay h2 {
@@ -15,7 +15,7 @@
     /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     section {
-        padding: 20px 10px; /* Reduced padding on mobile */
+        padding: 10px 5px; /* Reduced padding on mobile */
     }
 
     .welcome-section h2 {
