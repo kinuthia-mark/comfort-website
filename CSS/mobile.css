@@ -1,17 +1,18 @@
 /* Media Query for Mobile Devices */  
 @media (max-width: 768px) {  
     .image-text-overlay {  
-        padding: 10px; /* Increased padding for better spacing */  
+        padding: 5px; /* Reduced padding for a smaller overlay */  
         text-align: center; /* Center text for better alignment */  
+        max-width: 80%; /* Limit max width to ensure it fits on the image */
     }  
 
     .image-text-overlay h2 {  
-        font-size: 1.8em; /* Adjusted font size for headings */  
+        font-size: 0.8em;  /* Adjusted font size for headings to be smaller */  
         line-height: 1.2; /* Added line height for better spacing */  
     }  
 
     .image-text-overlay p {  
-        font-size: 0.9em; /* Adjusted font size for paragraphs */  
+        font-size: 0.7em; /* Adjusted font size for paragraphs to be smaller */  
         line-height: 1.4; /* Added line height for better spacing */  
     }  
 
