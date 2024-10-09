@@ -1,45 +1,42 @@
-/* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .image-text-overlay {
-        padding: 5px; /* Reduce padding for smaller screens */
-    }
+/* Media Query for Mobile Devices */  
+@media (max-width: 768px) {  
+    .image-text-overlay {  
+        padding: 10px; /* Increased padding for better spacing */  
+        text-align: center; /* Center text for better alignment */  
+    }  
 
-    .image-text-overlay h2 {
-        font-size: 2em; /* Smaller font size for headings */
-    }
+    .image-text-overlay h2 {  
+        font-size: 1.8em; /* Adjusted font size for headings */  
+        line-height: 1.2; /* Added line height for better spacing */  
+    }  
 
-    .image-text-overlay p {
-        font-size: 1em; /* Smaller font size for paragraphs */
-    }
+    .image-text-overlay p {  
+        font-size: 0.9em; /* Adjusted font size for paragraphs */  
+        line-height: 1.4; /* Added line height for better spacing */  
+    }  
 
-    /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    section {
-        padding: 10px 5px; /* Reduced padding on mobile */
-    }
+    section {  
+        padding: 10px 5px; /* Reduced padding on mobile */  
+    }  
 
-    .welcome-section h2 {
-        font-size: 2em; /* Smaller heading on mobile */
-    }
+    .welcome-section h2 {  
+        font-size: 2em; /* Smaller heading on mobile */  
+    }  
 
-    .welcome-section p {
-        font-size: 1em; /* Smaller paragraph on mobile */
-    }
+    .welcome-section p {  
+        font-size: 1em; /* Smaller paragraph on mobile */  
+    }  
 
-    /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    .common-image {
-        width: 90%; /* Make the images responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
+    .common-image {  
+        width: 90%; /* Make the images responsive */  
+        height: auto; /* Maintain aspect ratio */  
+    }  
 
-    /* Media Query for Mobile Devices */
-@media (max-width: 768px) {
-    h2 {
-        font-size: 1.5em; /* Smaller size for all h2 elements */
-    }
+    h2 {  
+        font-size: 1.5em; /* Smaller size for all h2 elements */  
+    }  
 
-    p {
-        font-size: 0.9em; /* Smaller size for all paragraphs */
-    }
+    p {  
+        font-size: 0.9em; /* Smaller size for all paragraphs */  
+    }  
 }
