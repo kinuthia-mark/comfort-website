@@ -1,53 +1,45 @@
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
-    /* Adjust font sizes for better readability */
     .image-text-overlay {
-        font-size: 1.5em; /* Adjust font size for the overlay */
-        padding: 15px; /* Reduce padding */
+        padding: 10px; /* Reduce padding for smaller screens */
     }
 
     .image-text-overlay h2 {
-        font-size: 2.5em; /* Adjusted size for mobile */
+        font-size: 2em; /* Smaller font size for headings */
     }
 
     .image-text-overlay p {
-        font-size: 1.2em; /* Adjusted size for mobile */
+        font-size: 1em; /* Smaller font size for paragraphs */
     }
 
-    /* Ensure images in the gallery are responsive */
-    .common-image {
-        width: 100%; /* Make images responsive */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    /* Modify section paddings for smaller screens */
+    /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
     section {
-        padding: 20px 10px; /* Adjust padding for smaller screens */
+        padding: 20px 10px; /* Reduced padding on mobile */
     }
 
-    /* Welcome section heading and text */
     .welcome-section h2 {
-        font-size: 2em; /* Adjusted heading size for mobile */
+        font-size: 2em; /* Smaller heading on mobile */
     }
 
     .welcome-section p {
-        font-size: 1em; /* Adjusted paragraph size for mobile */
+        font-size: 1em; /* Smaller paragraph on mobile */
     }
 
-    /* Services and reviews section */
-    .services-section h2, 
-    .reviews-section h2, 
-    .gallery-section h2 {
-        font-size: 1.8em; /* Adjusted heading size for mobile */
+    /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .common-image {
+        width: 90%; /* Make the images responsive */
+        height: auto; /* Maintain aspect ratio */
     }
 
-    .services-section p, 
-    .reviews-section blockquote {
-        font-size: 1em; /* Adjusted paragraph size for mobile */
+    /* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em; /* Smaller size for all h2 elements */
     }
 
-    /* Footer text adjustment */
-    .footer {
-        font-size: 0.9em; /* Smaller font size for mobile */
+    p {
+        font-size: 0.9em; /* Smaller size for all paragraphs */
     }
 }
