@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  checks:
+    name: HTML, links and image sizes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Validate HTML
+        run: npx --yes html-validate@9 *.html
+
+      # Every local link, image and stylesheet must point at a real file.
+      - name: Check internal links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: --offline --no-progress --root-dir "${{ github.workspace }}" './*.html'
+          fail: true
+
+      # Photos straight off a phone are several MB each. Keep every image
+      # under 400 KB so pages stay fast on mobile data.
+      - name: Image size budget
+        run: |
+          big=$(find images -type f -size +400k)
+          if [ -n "$big" ]; then
+            echo "::error::Images over 400 KB: $big"
+            exit 1
+          fi
+          du -sh images
