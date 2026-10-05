@@ -1,100 +1,96 @@
-this is a functional website for the hotel comfort executive suits, it should mainly just give the main pages like accomodation and scenery and reviews and also a contacts page.
+# Comfort Executive Suites Website
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![GitHub Pages](https://img.shields.io/badge/hosted%20on-GitHub%20Pages-222?logo=github&logoColor=white)
 
-Comfort Executive Suites Website Documentation
+The website for **Comfort Executive Suites**, a hotel on Magadi Road in Ongata Rongai, Kenya. It shows guests the rooms and rates, the dining options and photos of the property, and tells them how to get in touch.
 
- Overview
-Comfort Executive Suites is a newly established hotel aimed at providing exceptional accommodation and services to guests. The website is designed to attract customers by offering a user-friendly interface, clear information about services, and an appealing aesthetic.
+**Live site:** <https://kinuthia-mark.github.io/comfort-website/>
 
-Goals
-- To effectively showcase the hotel’s offerings and attract customer traffic.
-- To provide a seamless experience for users navigating the website.
-- To facilitate easy booking and access to hotel information.
+It is a static site: plain HTML and CSS with no build step and no framework, so it loads quickly on mobile data and can be hosted anywhere.
 
-Design and Layout
-The website features a modern design with a black and reddish-orange color scheme. Key design elements include:
+## Pages
 
-- **Header**: Contains the hotel logo and navigation links, styled for clarity and ease of use.
-- **Image Sections**: Engaging images with text overlays that capture the essence of the hotel experience.
-- **Footer**: Provides essential information and contact details, ensuring visitors have access to the hotel’s contact information and social media links.
+| Page | File | What is on it |
+|------|------|---------------|
+| Home | `index.html` | Welcome banner, services, guest reviews, photo preview |
+| Accommodation | `accommodation.html` | Rate table and the three room types: Studio, Executive Suite, VIP Suite |
+| Dining | `food.html` | Restaurant, chefs, special offers, private dining and events |
+| Gallery | `gallery.html` | Photo grid of rooms, dining and grounds |
+| About Us | `about.html` | The hotel's story, mission and values |
+| Contact | `contact.html` | Phone, email, social media links and a Google Map |
 
- CSS Styling
-The website utilizes a structured CSS approach for styling various elements, including:
-
-- **General Body Styling**: Sets a consistent font, line height, and removes default margins and paddings.
-- **Header Styling**: Uses flexbox for alignment and offers a dropdown menu for navigation.
-- **Image Sections**: Features a responsive design to ensure images scale correctly on mobile devices.
-- **Tables**: Styled to present information clearly and professionally, especially for services and booking details.
-
-## Features
-### Home Page
-- **Welcome Section**: Introduces the hotel and its unique features.
-- **Image Gallery**: Showcases the hotel’s amenities and atmosphere with engaging hover effects.
-- **Services and Reviews**: Provides details about the services offered and testimonials from previous guests.
-
-### Dining Page
-- **Menu Display**: A dedicated page for showcasing the hotel’s dining options, designed to attract more attention and customers.
-- **Clear Layout**: Utilizes sections that are easy to read and visually appealing, enhancing the user experience.
-
-### Mobile Responsiveness
-The website includes media queries to ensure a responsive design, particularly for mobile devices. Adjustments made for mobile view include:
-- Resizing text for better readability.
-- Maintaining the layout integrity without compromising style.
-
-## User Engagement
-- **Auth Links**: Provides user authentication options for guests to book rooms and manage reservations.
-- **Contact Information**: Clearly displayed in the footer, making it easy for potential customers to reach out.
-
-## Technical Details
-### HTML Structure
-- Organized into semantic sections, including headers, footers, navigation, and content areas.
-- Uses classes and IDs for targeted styling and interactivity.
-
-### CSS Files
-The website's styling is managed through separate CSS files, allowing for modular and maintainable code:
-- **General Styles**: Covers body and typography settings.
-- **Component-Specific Styles**: Focuses on header, footer, gallery, and table elements.
-- **Responsive Design**: Ensures the website functions well across various device sizes.
-
-### Example CSS Snippets
-```css
-/* General body styling */
-body {
-    font-family: 'Open Sans', sans-serif; /* Sets the main font */
-    margin: 0; /* Removes default margin */
-    padding: 0; /* Removes default padding */
-    line-height: 1.6; /* Adjusts line spacing for readability */
-}
-
-/* Image section with text overlay */
-.image-section {
-    position: relative; /* Allows for text overlay positioning */
-    text-align: center; /* Centers text horizontally */
-    color: white; /* White text for overlay */
-}
-
-.image-section img {
-    width: 100%; /* Image takes full width */
-    height: auto; /* Maintains aspect ratio */
-}
-
-/* Footer centering */
-.footer {
-    text-align: center; /* Centers footer text */
-    background-color: #000; /* Black background */
-    color: #fff; /* White text color */
-    padding: 20px; /* Adds padding */
-}
+```mermaid
+flowchart LR
+    Home[index.html] --> Acc[accommodation.html]
+    Home --> Food[food.html]
+    Home --> Gal[gallery.html]
+    Home --> About[about.html]
+    Home --> Contact[contact.html]
 ```
 
-## Future Improvements
-- Enhance mobile responsiveness based on user feedback.
-- Add more interactive features, such as a booking calendar or virtual tours of the hotel.
-- Continuously update content to reflect seasonal promotions and events.
+Every page shares the same header (menu, logo, Contact Us link) and footer.
 
-## Conclusion
-The **Comfort Executive Suites** website is a vital tool for attracting guests and providing essential information about the hotel. With its user-friendly design, engaging content, and responsive layout, it aims to deliver an exceptional online experience that complements the hotel's service quality.
+## Design
 
---- 
+- Black and reddish-orange colour scheme
+- Lora for headings and Open Sans for body text (Google Fonts)
+- Full-width photos with text overlays on the home page
+- Hover effects on gallery images
+- Each page has its own `<meta name="description">` so search results show a useful summary
 
-Feel free to adjust any sections or add more specific details as needed! Let me know if you need further modifications or additional information.
+### Mobile layout
+
+`CSS/mobile.css` holds the media queries. On small screens the text is resized, the header stacks, and the photos scale to the screen width.
+
+## Project structure
+
+```text
+comfort-website/
+├── index.html
+├── accommodation.html
+├── food.html
+├── gallery.html
+├── about.html
+├── contact.html
+├── CSS/
+│   ├── styles.css     # Shared base styles: fonts, header, footer
+│   ├── index.css      # Home page sections and image overlays
+│   ├── gallery.css    # Gallery grid and hover effects
+│   ├── table.css      # Rate table on the accommodation page
+│   ├── contact.css    # Contact page layout
+│   └── mobile.css     # Media queries for phones and small tablets
+└── images/            # Room, dining and building photos, plus the logo
+```
+
+## Running it locally
+
+No install is needed. Either open `index.html` in a browser, or serve the folder so the links behave exactly as they do online:
+
+```bash
+git clone https://github.com/kinuthia-mark/comfort-website.git
+cd comfort-website
+python -m http.server 8000
+```
+
+Then open <http://localhost:8000>.
+
+## Deployment
+
+The site is published with GitHub Pages from the `master` branch. Any change merged into `master` goes live within a minute or two.
+
+## Analytics
+
+Each page includes the Meta Pixel, so visits from Facebook and Instagram adverts can be measured in Meta Events Manager.
+
+## Ideas for next steps
+
+- Online booking form or a booking calendar
+- Compress the photos (WebP) to make the pages load faster
+- A virtual tour of the rooms
+- Seasonal offers section that is easy to update
+
+## Author
+
+**Mark Kinuthia** - [github.com/kinuthia-mark](https://github.com/kinuthia-mark)
