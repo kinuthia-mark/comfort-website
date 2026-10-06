@@ -107,3 +107,10 @@ body {
     background-color: #000; /* Sets background color to black */
     color: #fff; /* Sets text color to white */
 }
+
+
+/* Photos are wrapped in <picture> to serve WebP with a JPEG fallback.
+   display: contents lets the <img> lay out exactly as if it had no wrapper. */
+picture {
+    display: contents;
+}
